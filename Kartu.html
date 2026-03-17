@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bithoqoh Tahniah Idul Fitri</title>
+
+<style>
+
+body{
+text-align:center;
+background:#f2f2f2;
+font-family:Arial;
+}
+
+.card{
+width:400px;
+height:620px;
+margin:auto;
+background-image:url("Kartu.jpg");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+.nama{
+position:absolute;
+top:410px;        /* posisi kotak putih */
+width:100%;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+color:#444;
+}
+
+input{
+padding:10px;
+font-size:16px;
+}
+
+button{
+padding:10px 15px;
+font-size:16px;
+margin-left:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h3>Tulis Nama Anda</h3>
+
+<input type="text" id="namaInput" placeholder="Nama Anda">
+<button onclick="tulisNama()">Tampilkan</button>
+
+<br><br>
+
+<div class="card">
+<div class="nama" id="hasilNama"></div>
+</div>
+
+<script>
+
+function tulisNama(){
+var nama=document.getElementById("namaInput").value;
+document.getElementById("hasilNama").innerText = nama;
+}
+
+</script>
+
+</body>
+</html>
